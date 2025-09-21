@@ -13,11 +13,7 @@ class Program
 
         if (studentGrade >= 90)
         {
-            if (secondDigit >= 7)
-            {
-                Console.WriteLine("Your grade is A+");
-            }
-            else if (secondDigit >= 3 && secondDigit < 6)
+           if (secondDigit >= 3)
             {
                 Console.WriteLine("Your grade is A");
             }

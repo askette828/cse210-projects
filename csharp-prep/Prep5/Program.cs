@@ -7,12 +7,15 @@ class Program
     static void Main(string[] args)
     {
         DisplayWelcome();
-        PromptUserName();
-        PromptUserNumber();
-        PromptUserBirthYear();
+        string userName = PromptUserName();
+        int number = PromptUserNumber();
+        int year = PromptUserBirthYear();
+        int square = squareNumber(number);
+        int currentYear = DateTime.Now.Year;
+        int age = currentYear - year;
 
-        Console.WriteLine($"{PromptUserName}, the square of your number is {squareNumber}");
-
+        Console.WriteLine($"{userName}, the square of your number is {square}");
+        Console.WriteLine($"{userName}, you will turn {age} this year.");
     }
 
     static void DisplayWelcome()
@@ -31,7 +34,7 @@ class Program
     {
         Console.Write("Please enter your favorite number: ");
         int x = int.Parse(Console.ReadLine());
-        return x * x;
+        return x;
     }
 
     static int PromptUserBirthYear()

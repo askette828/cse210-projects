@@ -1,5 +1,5 @@
-namespace Classes;
-
+using System;
+using System.Collections.Generic; 
 public class Job
 {
     public string _jobTitle;
@@ -19,19 +19,5 @@ public class Job
     public void Display()
     {
         Console.WriteLine($"{_jobTitle} ({_companyName}) {_startYear}-{_endYear}");
-    }
-}
-
-public class Resume
-{
-    public string _name;
-    public List<Job> Jobs = new List<Job>();
-
-    public void Display()
-    {
-        foreach (Job job in Jobs)
-        {
-            job.Display();
-        }
     }
 }

@@ -1,5 +1,4 @@
 using System;
-using Classes;
 
 class Program
 {
@@ -8,8 +7,12 @@ class Program
         Job job1 = new Job("Front-End Developer", "Dartcore Inc.", 2022, 2025);
         Job job2 = new Job("QA Analyst", "CRM systems", 2018, 2020);
 
-        job1.Display();
-        job2.Display();
+        Resume resume1 = new Resume("Dias Doktyrbek");
+        resume1.Jobs.Add(job1);
+        resume1.Jobs.Add(job2);
+
+
+        resume1.Display();
 
 
     }

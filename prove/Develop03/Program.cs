@@ -4,6 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Console.WriteLine("Please text your message");
+        string userPrompt = Console.ReadLine();
+
+        switch(userPrompt)
+        {
+            case "":
+                Scripture.Display();
+                Word.ConvertToDashes(Scripture.ConvertToStringArray().ToList());
+                break;
+
+            case "quit":
+                break;
+        }
     }
 }

@@ -25,7 +25,7 @@ class Program
 
         else if (studentGrade >= 80)
         {
-            if (secondDigit >= 7)
+            if (secondDigit >= 7) 
             {
                 Console.WriteLine("Your grade is B+");
             }
@@ -33,7 +33,7 @@ class Program
             {
                 Console.WriteLine("Your grade is B");
             }
-            else
+            else 
             {
                 Console.WriteLine("Your grade is B-");
             }
@@ -88,4 +88,4 @@ class Program
     }
 
   
-}
+} 

@@ -9,7 +9,7 @@ class Program
 
         switch(userPrompt)
         {
-            case "":
+            case " ":
                 Scripture.Display();
                 Word.ConvertToDashes(Scripture.ConvertToStringArray().ToList());
                 break;
